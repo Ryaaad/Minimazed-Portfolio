@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li:after{
+content: "";
+position: absolute;
+top: 50%;
+left: 0%;
+z-index: -1;
+transform: translateY(-50%);
+transition: all ;
+transition-duration: 700ms;
+width: 0;
+height:38.25px;
+background-color: #333;
+}
+li:hover:after{
+  width: 90.09px;
+}
