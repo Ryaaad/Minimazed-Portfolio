@@ -4,6 +4,8 @@ import { useState,useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Contact from '../components/Contact';
 import Footer from '../components/Footer'
+import Image from "next/image";
+import pic from "../public/static/Pic.avif"
 
 
 export default function Home() {
@@ -45,7 +47,11 @@ export default function Home() {
  ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 `}  > </div>
 </div>
       <Navbar ></Navbar>
+      <div className="h-[510px] flex gap-12 w-[92%] mx-auto bg-[#f6fbff]" >
+        <Image height={510} width={420} src={pic} alt="Img"></Image>
       <Landing></Landing>
+       </div>
+      {/* <Contact></Contact> */}
       <Footer></Footer>
     </div>
   )
