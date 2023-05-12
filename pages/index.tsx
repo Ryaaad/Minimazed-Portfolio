@@ -6,6 +6,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer'
 import Image from "next/image";
 import pic from "../public/static/Pic.avif"
+import RouterHandler from '../components/RouteHandler';
 
 
 export default function Home() {
@@ -40,18 +41,17 @@ export default function Home() {
         <meta name="description" content=" Ryad Allali Portfolio" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-<div  id='Mouse' className={` w-1 h-1 p-3 absolute rounded-full border-2 border-solid border-[#33333389] 
+<div  id='Mouse' className={` w-1 h-1 p-3 absolute rounded-full border-2 border-solid border-[#33333389] pointer-events-none
       translate-x-[-50%] translate-y-[-50%] bg-[transparent] ${Hovered && "border-[transparent] "} `}>
  <div   id='Mouse' 
- className={`absolute bg-black  rounded-full w-[6px] h-[6px] translate-x-[-50%] translate-y-[-50%] 
- ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 `}  > </div>
+ className={`absolute bg-black rounded-full w-[6px] h-[6px] translate-x-[-50%] translate-y-[-50%] 
+ ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 pointer-events-none`}  > </div>
 </div>
       <Navbar ></Navbar>
-      <div className="h-[510px] flex gap-12 w-[92%] mx-auto bg-[#f6fbff]" >
+      <div className="h-[510px] flex w-[92%] mx-auto" >
         <Image height={510} width={420} src={pic} alt="Img"></Image>
-      <Landing></Landing>
+        <RouterHandler></RouterHandler>
        </div>
-      {/* <Contact></Contact> */}
       <Footer></Footer>
     </div>
   )

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Poppins} from '@next/font/google'
-import pic from "../public/static/Pic.avif"
  const poppins = Poppins({
     weight: '900',
   })
@@ -13,7 +11,7 @@ import pic from "../public/static/Pic.avif"
 const Landing = () => {
     
     return (  
-      <div>
+      <div className='pl-[48px]'>
             <h1 className={`mt-[120px] mb-[60px] tracking-wide relative 
             text-[48px] text-[#333] ${poppins.className} font-extrabold`}  >ALLALI RYAD
             <div className="absolute bottom-[-30%] left-0 w-[60px] h-1 bg-black " ></div>

@@ -13,8 +13,7 @@ const Navbar = () => {
     return ( 
     <div className="flex justify-between p-3 justify-items-center px-12 relative top-0 right-0 items-center w-full " >
      
-       <h1 id='hovered' className= {` ${poppins.className} hover:cursor-pointer text-2xl leading-2 font-bold`}>
-        Allali Ryad</h1>
+       <h1 id='hovered' className= {` ${poppins.className} hover:cursor-pointer text-2xl leading-2 font-bold`}> Allali Ryad</h1>
        <ul className="flex items-center text-[15px]  text-[#333] ">
         <li  id='hovered' className={`${poppins.className} p-2 px-6 hover:cursor-pointer delay-500 duration-100
          relative z-10 hover:text-white  ${a && "bg-[#333] text-white  " } `}
