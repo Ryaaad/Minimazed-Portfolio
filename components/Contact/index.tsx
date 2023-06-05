@@ -1,15 +1,13 @@
 import { IoLocationSharp } from "react-icons/io5";
 import { HiMail } from "react-icons/hi";
 import { BsFillPhoneFill } from "react-icons/bs";
+import Title from "../shared/Title";
 
 
 const Contact = () => {
     return ( 
         <div  className="py-[95px] px-[20px] " >
-            <div className="flex gap-8 items-center ">
-          <h1  className="text-[#333333] tracking-[0.3rem] text-[15px] font-bold min-w-max z-10 " id="hovered" >GET IN TOUCH</h1>  
-          <span className="bg-[#7d7789] w-full h-[1.5px] "></span>
-            </div>
+          <Title  title="GET IN TOUCH" ></Title>
             <div className="flex mt-[60px] items-center justify-between ">
              <div className="border border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-[31%] border-[#00000012]  ">
              <IoLocationSharp></IoLocationSharp>

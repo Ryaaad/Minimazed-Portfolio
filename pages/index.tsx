@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Landing from '../components/Home/index'
 import { useState,useEffect } from 'react'
 import Navbar from '../components/shared/Navbar'
-import Contact from '../components/Contact/index';
 import Footer from '../components/shared/Footer'
 import Image from "next/image";
 import pic from "../public/static/Pic.avif"
@@ -11,6 +9,7 @@ import RouterHandler from '../components/RouteHandler';
 
 export default function Home() {
   const [Hovered, setHovered] = useState(false)
+  const [Route, setRoute] = useState("Home")
   useEffect(() => {
   
  const hover=document.querySelectorAll('#hovered')
@@ -47,10 +46,10 @@ export default function Home() {
  className={`absolute bg-black rounded-full w-[6px] h-[6px] translate-x-[-50%] translate-y-[-50%] 
  ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 pointer-events-none`}  > </div>
 </div>
-      <Navbar ></Navbar>
+      <Navbar setRoute={setRoute} ></Navbar>
       <div className="h-[510px] flex w-[92%] mx-auto" >
         <Image height={510} width={420} src={pic} alt="Img"></Image>
-        <RouterHandler></RouterHandler>
+        <RouterHandler Route={Route} ></RouterHandler>
        </div>
       <Footer></Footer>
     </div>
