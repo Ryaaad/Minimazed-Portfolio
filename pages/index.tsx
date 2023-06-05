@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Landing from '../components/Landing'
+import Landing from '../components/Home/index'
 import { useState,useEffect } from 'react'
-import Navbar from '../components/Navbar'
-import Contact from '../components/Contact';
-import Footer from '../components/Footer'
+import Navbar from '../components/shared/Navbar'
+import Contact from '../components/Contact/index';
+import Footer from '../components/shared/Footer'
 import Image from "next/image";
 import pic from "../public/static/Pic.avif"
 import RouterHandler from '../components/RouteHandler';
