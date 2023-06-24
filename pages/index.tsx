@@ -25,7 +25,7 @@ export default function Home() {
    })
  }
  
-  }, [])
+  }, [Route])
 
   return (
     <div  className='h-[100vh] overflow-hidden '  onMouseMove={(e)=>{ 

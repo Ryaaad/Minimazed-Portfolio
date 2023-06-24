@@ -154,13 +154,13 @@ const About = () => {
         <Title title="PARTNERS" />
         <div className="grid grid-cols-4 grid-rows-2 mt-12 h-[40vh] ">
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0 flex justify-center items-center ">
-          <Image  alt="GDGLogo" src={GDGLogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
+          <Image  alt="GDGLogo" id='hovered' src={GDGLogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0  flex justify-center items-center ">
-            <Image  alt="Mclogo" src={Mclogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
+            <Image  alt="Mclogo" id='hovered' src={Mclogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0  flex justify-center items-center ">
-          <Image  alt="GdscLogo" src={GdscLogo} className=" rounded-full opacity-50 w-[90px] h-[90px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
+          <Image  alt="GdscLogo" id='hovered' src={GdscLogo} className=" rounded-full opacity-50 w-[90px] h-[90px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0 flex justify-center items-center "></div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 flex justify-center items-center "></div>
