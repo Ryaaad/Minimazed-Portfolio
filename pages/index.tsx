@@ -4,7 +4,9 @@ import Navbar from '../components/shared/Navbar'
 import Footer from '../components/shared/Footer'
 import Image from "next/image";
 import pic from "../public/static/Pic.avif"
-import RouterHandler from '../components/RouteHandler';
+import Landing from '../components/Home';
+import About from '../components/About';
+import Contact from '../components/Contact';
 
 
 export default function Home() {
@@ -49,7 +51,11 @@ export default function Home() {
       <Navbar setRoute={setRoute} ></Navbar>
       <div className="h-[510px] flex w-[92%] mx-auto" >
         <Image height={510} width={420} src={pic} alt="Img"></Image>
-        <RouterHandler Route={Route} ></RouterHandler>
+        <div className="bg-[#f6fbff] h-[510px] w-[calc(100%-420px)] overflow-y-scroll custom-scrollbar" >
+            {Route=="Home" && <Landing></Landing> }
+            {Route=="About" && <About></About> }
+            {Route=="Contact" && <Contact></Contact> }
+        </div>
        </div>
       <Footer></Footer>
     </div>
