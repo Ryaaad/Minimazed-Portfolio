@@ -21,7 +21,7 @@ const Navbar:React.FC<props> = ({setRoute}) => {
     
     return ( 
       <>
-    <div className="hidden justify-between p-3 justify-items-center px-12 relative top-0 right-0 items-center w-full md:flex " >
+    <div className="hidden justify-between p-3 justify-items-center px-6 relative top-0 right-0 items-center w-full md:flex " >
      
        <h1 id='hovered' className= {` ${poppins.className} hover:cursor-pointer text-2xl leading-2 font-bold`}> Allali Ryad</h1>
        <ul className="flex items-center text-[15px]  text-[#333] ">
