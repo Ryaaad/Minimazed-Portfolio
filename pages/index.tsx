@@ -4,7 +4,9 @@ import Navbar from '../components/shared/Navbar'
 import Footer from '../components/shared/Footer'
 import Image from "next/image";
 import pic from "../public/static/Pic.avif"
-import RouterHandler from '../components/RouteHandler';
+import Landing from '../components/Home';
+import About from '../components/About';
+import Contact from '../components/Contact';
 
 
 export default function Home() {
@@ -23,7 +25,7 @@ export default function Home() {
    })
  }
  
-  }, [])
+  }, [Route])
 
   return (
     <div  className='h-[100vh] overflow-hidden '  onMouseMove={(e)=>{ 
@@ -40,18 +42,25 @@ export default function Home() {
         <meta name="description" content=" Ryad Allali Portfolio" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-<div  id='Mouse' className={` w-1 h-1 p-3 absolute rounded-full border-2 border-solid border-[#33333389] pointer-events-none
-      translate-x-[-50%] translate-y-[-50%] bg-[transparent] ${Hovered && "border-[transparent] "} `}>
+<div  id='Mouse' className={` hidden w-1 h-1 p-3 absolute rounded-full border-2 border-solid border-[#33333389] pointer-events-none
+      translate-x-[-50%] translate-y-[-50%] bg-[transparent] ${Hovered && "border-[transparent] "} md:block `}>
  <div   id='Mouse' 
- className={`absolute bg-black rounded-full w-[6px] h-[6px] translate-x-[-50%] translate-y-[-50%] 
- ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 pointer-events-none`}  > </div>
+ className={` hidden absolute bg-black rounded-full w-[6px] h-[6px] translate-x-[-50%] translate-y-[-50%] 
+ ${Hovered && "h-[70px] bg-[#3333338e] w-[70px] "}  duration-500 pointer-events-none md:block `}  > </div>
 </div>
       <Navbar setRoute={setRoute} ></Navbar>
-      <div className="h-[510px] flex w-[92%] mx-auto" >
-        <Image height={510} width={420} src={pic} alt="Img"></Image>
-        <RouterHandler Route={Route} ></RouterHandler>
+      <div className="h-[510px] flex w-full mx-auto md:w-[95%] " >
+        <Image src={pic} alt="Img"  className='h-[510px] w-[380px] hidden lg:block lg:w-[420px] ' ></Image>
+        <div className="bg-[#f6fbff] w-full h-[calc(100vh-56px)] md:h-[510px] lg:w-[calc(100%-380px)] lg:w-[calc(100%-420px)] overflow-y-scroll custom-scrollbar " >
+            {Route=="Home" && <Landing></Landing> }
+            {Route=="About" && <About></About> }
+            {Route=="Contact" && <Contact></Contact> }
+        </div>
        </div>
+       <div  className='hidden md:block' >
       <Footer></Footer>
+       </div>
     </div>
   )
 }
+//
