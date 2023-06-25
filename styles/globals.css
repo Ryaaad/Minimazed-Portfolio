@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-li:after{
+li#hovered:after{
 content: "";
 position: absolute;
 top: 50%;
@@ -16,6 +16,6 @@ width: 0;
 height:38.25px;
 background-color: #333;
 }
-li:hover:after{
+li#hovered:hover:after{
   width: 91px;
 }

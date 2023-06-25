@@ -57,7 +57,9 @@ export default function Home() {
             {Route=="Contact" && <Contact></Contact> }
         </div>
        </div>
+       <div  className='hidden md:block' >
       <Footer></Footer>
+       </div>
     </div>
   )
 }
