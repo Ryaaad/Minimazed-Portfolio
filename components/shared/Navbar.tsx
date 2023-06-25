@@ -55,7 +55,7 @@ const Navbar:React.FC<props> = ({setRoute}) => {
      { MenuClicked &&  <FiX className='text-3xl cursor-pointer z-20' onClick={()=>setMenuClicked(false)} ></FiX>}
 
 
-  {MenuClicked &&   <div className=" absolute grid justify-items-end bottom-[-1000%] z-10 right-0  h-[calc(100vh-56px)] bg-white text-[#333] py-[50px] px-3 w-[35%] sm:w-[30%] sm:px-4 sm:py-[75px] ">
+  {MenuClicked &&   <div className=" absolute grid justify-items-end bottom-0 translate-y-[100%] z-10 right-0  h-[calc(100vh-56px)] bg-white text-[#333] py-[75px] px-3 w-[35%] sm:w-[30%] sm:px-4  ">
       <Image alt='pic' src={pic} className='h-[70px] w-[70px]' ></Image>
       <ul className='text-end  flex flex-col gap-2 mt-3' >
     <li className={`cursor-pointer `}

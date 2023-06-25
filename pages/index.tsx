@@ -50,8 +50,8 @@ export default function Home() {
 </div>
       <Navbar setRoute={setRoute} ></Navbar>
       <div className="h-[510px] flex w-full mx-auto md:w-[95%] " >
-        <Image src={pic} alt="Img"  className='h-[510px] w-[380px] hidden md:block lg:w-[420px] ' ></Image>
-        <div className="bg-[#f6fbff] w-full h-[calc(100vh-56px)] md:h-[510px] md:w-[calc(100%-380px)] lg:w-[calc(100%-420px)] overflow-y-scroll custom-scrollbar " >
+        <Image src={pic} alt="Img"  className='h-[510px] w-[380px] hidden lg:block lg:w-[420px] ' ></Image>
+        <div className="bg-[#f6fbff] w-full h-[calc(100vh-56px)] md:h-[510px] lg:w-[calc(100%-380px)] lg:w-[calc(100%-420px)] overflow-y-scroll custom-scrollbar " >
             {Route=="Home" && <Landing></Landing> }
             {Route=="About" && <About></About> }
             {Route=="Contact" && <Contact></Contact> }
