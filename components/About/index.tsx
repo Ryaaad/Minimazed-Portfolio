@@ -12,14 +12,14 @@ const About = () => {
     return ( 
         <div  className="py-[95px] px-[20px] text-[#7d7789] " >
           <Title title="About Me" />
-        <div className="flex justify-between items-start pr-2 mt-8  ">
-        <p   className=" w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Ryad </span>a passionate and dedicated Fullstack web developer with 2 years of professional experience. 
+        <div className="flex flex-col gap-12 md:gap-0 md:flex-row md:justify-between md:items-start pr-2 mt-8  ">
+        <p   className=" w-full md:w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Ryad </span>a passionate and dedicated Fullstack web developer with 2 years of professional experience. 
         <br />
         <br />
         I am committed to delivering high-quality results and transforming your ideas into reality.
         <br />
   Let's collaborate and bring your vision to life !</p>
-        <div  className=" w-[45%] h-[170px] flex flex-col justify-between ">
+        <div  className=" w-full mt-3 h-[120px] md:mt-0 md:w-[45%] md:h-[170px] flex flex-col justify-between ">
           <div  className="flex gap-10 items-center " >
           <span className="font-bold ">  Name: </span> Allali Ryad
           </div>
@@ -40,7 +40,7 @@ const About = () => {
         <div className="w-[40%]" >
         <Title title="SERVICES" />
         <div className="mt-7">
-        <div className="mt-7">
+        <div className="mt-7 text-sm sm:text-base ">
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
         <div className="w-[50%]" >
         <Title title="INTERESTS" />
-        <div className="mt-7">
+        <div className="mt-7 text-sm sm:text-base ">
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
@@ -82,11 +82,11 @@ const About = () => {
         </div>
 
 
-        <div  className=" flex items-start justify-between mt-20 " >
-        <div className="w-[40%]" >
+        <div  className=" flex flex-col gap-[80px] sm:gap-12 md:gap-0 md:flex-row md:items-start md:justify-between mt-20 " >
+        <div className=" w-full sm:w-[45%] md:w-[40%]" >
         <Title title="PROGRAMMING" />
-        <div className="mt-7">
-        <div className="mt-7">
+        <div className=" mt-10 sm:mt-7">
+        <div className="sm:mt-7">
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
    <div className="w-full">
@@ -127,9 +127,9 @@ const About = () => {
         </div>
         </div>
         </div>
-        <div className="w-[50%]" >
+        <div className=" w-full sm:w-[55%] md:w-[50%]" >
         <Title title="LANGUAGE" />
-        <div className="mt-7">
+        <div className="mt-10 sm:mt-7">
      <div className="flex flex-col gap-4">
      <div className="w-full">
     <div className="flex w-[85%] justify-between">
@@ -152,21 +152,21 @@ const About = () => {
 
         <div  className="w-full mt-20 " >
         <Title title="PARTNERS" />
-        <div className="grid grid-cols-4 grid-rows-2 mt-12 h-[40vh] ">
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0 flex justify-center items-center ">
+        <div className="grid grid-cols-2 grid-rows-4 h-[80vh] md:grid-cols-4 md:grid-rows-2 mt-12 md:h-[40vh] ">
+          <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0 flex justify-center items-center">
           <Image  alt="GDGLogo" id='hovered' src={GDGLogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0  flex justify-center items-center ">
+          <div className="border-2 border-solid border-[#e5edf4] md:border-r-0 border-b-0  flex justify-center items-center  ">
             <Image  alt="Mclogo" id='hovered' src={Mclogo} className=" rounded-full opacity-50 w-[85px] h-[85px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0  flex justify-center items-center ">
           <Image  alt="GdscLogo" id='hovered' src={GdscLogo} className=" rounded-full opacity-50 w-[90px] h-[90px] hover:opacity-100 duration-75 cursor-pointer " ></Image>
           </div>
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-b-0 flex justify-center items-center "></div>
+          <div className="border-2 border-solid border-[#e5edf4] md:border-r-0 border-b-0 flex justify-center items-center "></div>
           <div className="border-2 border-solid border-[#e5edf4] border-r-0 flex justify-center items-center "></div>
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 flex justify-center items-center "></div>
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 flex justify-center items-center "></div>
-          <div className="border-2 border-solid border-[#e5edf4] border-r-0 flex justify-center items-center "></div>
+          <div className="border-2 border-solid border-[#e5edf4] md:border-r-0 flex justify-center items-center "></div>
+          <div className="border-2 border-solid border-[#e5edf4] border-r-0 border-t-0 md:border-t-2 flex justify-center items-center "></div>
+          <div className="border-2 border-solid border-[#e5edf4] md:border-r-0 border-t-0 md:border-t-2 flex justify-center items-center "></div>
         </div>
         </div>
         </div>
