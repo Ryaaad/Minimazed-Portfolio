@@ -11,15 +11,15 @@ const Contact = () => {
             <div className="flex mt-[60px] flex-col gap-5 md:gap-0 md:items-center md:justify-between md:flex-row ">
              <div className="border border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-full border-[#00000012] md:text-base lg:text-[12px] xl:text-base md:w-[31%] ">
              <IoLocationSharp  className="text-base" ></IoLocationSharp>
-             Ave Street, New York, USA
+             mhalma, Algeria
              </div>
              <div className="border border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-full border-[#00000012] md:text-base lg:text-[12px] xl:text-base md:w-[31%]">
              <HiMail  className="text-base" ></HiMail>
-            ryadallali0@gmail.com
+            rayanalllali@gmail.com
              </div>
              <div className="border-[#00000012] border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-full border md:text-base lg:text-[12px] xl:text-base md:w-[31%]">
              <BsFillPhoneFill className="text-base" ></BsFillPhoneFill>
-             054238542185
+             0542969587
              </div>
             </div>
             <div className="mt-8 flex flex-col gap-5 md:gap-0 md:justify-between md:flex-row md:items-center">

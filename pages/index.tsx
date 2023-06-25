@@ -3,12 +3,12 @@ import { useState,useEffect } from 'react'
 import Navbar from '../components/shared/Navbar'
 import Footer from '../components/shared/Footer'
 import Image from "next/image";
-import pic from "../public/static/Pic.avif"
 import Landing from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Service from '../components/services';
-
+import Project from '../components/Projects';
+import me from "../public/Images/shared/Rayan.jpg"
 export default function Home() {
   const [Hovered, setHovered] = useState(false)
   const [Route, setRoute] = useState("Home")
@@ -50,12 +50,13 @@ export default function Home() {
 </div>
       <Navbar setRoute={setRoute} ></Navbar>
       <div className="h-[510px] flex w-full mx-auto md:w-[95%] " >
-        <Image src={pic} alt="Img"  className='h-[510px] w-[380px] hidden lg:block lg:w-[420px] ' ></Image>
-        <div className="bg-[#f6fbff] w-full h-[calc(100vh-56px)] md:h-[510px] lg:w-[calc(100%-380px)] lg:w-[calc(100%-420px)] overflow-y-scroll custom-scrollbar " >
-            {Route=="Home" && <Landing></Landing> }
+        <Image src={me} alt="me"  className='h-[510px] w-[380px] hidden lg:block lg:w-[400px] filter brightness-5 grayscale ' ></Image>
+        <div className={`bg-[#f6fbff] w-full h-[calc(100vh-56px)] md:h-[510px] lg:w-[calc(100%-400px)] ${Route!="Home" && "overflow-y-scroll custom-scrollbar" } `} >
+            {Route=="Home" && <Landing  setRoute={setRoute} ></Landing> }
             {Route=="About" && <About></About> }
             {Route=="Contact" && <Contact></Contact> }
             {Route=="Service" && <Service></Service> }
+            {Route=="Portfolio" && <Project></Project> }
             
         </div>
        </div>

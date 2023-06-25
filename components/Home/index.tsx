@@ -1,4 +1,5 @@
 import { Poppins} from '@next/font/google'
+import { Dispatch, SetStateAction } from 'react'
  const poppins = Poppins({
     weight: '900',
   })
@@ -8,7 +9,12 @@ import { Poppins} from '@next/font/google'
   const poppinslighter = Poppins({
     weight: '300',
   })
-const Landing = () => {
+
+
+  interface Props{
+    setRoute: Dispatch<SetStateAction<string>>
+  }
+const Landing:React.FC<Props> = ({setRoute}) => {
     
     return (  
       <>
@@ -32,8 +38,9 @@ const Landing = () => {
             <p className={` text-[#7d7789] tracking-wide ${poppinslighter.className} my-6 text-xl sm:text-2xl sm:my-8 `}>Creative
               <span className={`text-black font-semibold`} >   Web developer</span>  </p>
             <button id='hovered' className={ `bg-[#333] text-white border-2 border-transparent cursor-pointer
-         ${poppinslight.className} rounded-none z-10 absolute duration-500 hover:border-[#000] 
-         hover:border-solid hover:bg-[transparent]  hover:text-[#333] p-3 px-6 sm:p-4 sm:px-8 `} >Get in Touch</button>
+         ${poppinslight.className} rounded-none duration-500 hover:border-[#000] 
+         hover:border-solid hover:bg-[transparent]  hover:text-[#333] p-3 px-6 sm:p-4 sm:px-8  relative z-10 `} onClick={()=>{setRoute('Contact'); console.log("sssj");  // not working when the mouss thing is visible
+         }} >Get in Touch</button>
       </div>
 
       </>
