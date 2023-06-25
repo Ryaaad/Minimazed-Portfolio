@@ -13,7 +13,7 @@ const About = () => {
         <div  className="py-[95px] px-[20px] text-[#7d7789] " >
           <Title title="About Me" />
         <div className="flex flex-col gap-12 md:gap-0 md:flex-row md:justify-between md:items-start pr-2 mt-8  ">
-        <p   className=" w-full md:w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Ryad </span>a passionate and dedicated Fullstack web developer with 2 years of professional experience. 
+        <p   className=" w-full md:w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Rayan </span>a passionate and dedicated Fullstack web developer with 2 years experience. 
         <br />
         <br />
         I am committed to delivering high-quality results and transforming your ideas into reality.
@@ -21,16 +21,16 @@ const About = () => {
   Let's collaborate and bring your vision to life !</p>
         <div  className=" w-full mt-3 h-[120px] md:mt-0 md:w-[45%] md:h-[170px] flex flex-col justify-between ">
           <div  className="flex gap-10 items-center " >
-          <span className="font-bold ">  Name: </span> Allali Ryad
+          <span className="font-bold ">  Name: </span> Allali Rayan
           </div>
           <div  className="flex gap-10 items-center" >
-          <span className="font-bold "> Degree: </span> Master of Science
+          <span className="font-bold "> Degree: </span> bachelor system informatique
           </div>
           <div  className="flex gap-10 items-center" >
-          <span className="font-bold "> Mail: </span>  ryadallali0@gmail.com
+          <span className="font-bold "> Mail: </span>  rayanalllali@gmail.com
           </div>
           <div className="flex gap-10 items-center" >
-          <span className="font-bold "> Phone: </span> 05 42 38 54 21 85
+          <span className="font-bold "> Phone: </span> 05 42 96 95 87
           </div>
 
         </div>
@@ -90,13 +90,13 @@ const About = () => {
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
    <div className="w-full">
-    <div className="flex w-[75%] justify-between">
-    <h1>React</h1>
-    <h1>75%</h1>
+    <div className="flex w-[70%] justify-between">
+    <h1>Nest js</h1>
+    <h1>70%</h1>
     </div>
    
    <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
-   <div className="w-[75%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
+   <div className="w-[70%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
    </div>
    </div>
    </div>
@@ -109,6 +109,17 @@ const About = () => {
    
    <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
    <div className="w-[75%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
+   </div>
+   </div>
+   </div>
+   <div className="w-full">
+    <div className="flex w-[60%] justify-between">
+    <h1>.Net (Asp.Net core )</h1>
+    <h1>60%</h1>
+    </div>
+   
+   <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
+   <div className="w-[60%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
    </div>
    </div>
    </div>
@@ -139,6 +150,28 @@ const About = () => {
    
    <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
    <div className="w-[85%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
+   </div>
+   </div>
+   </div>
+   <div className="w-full">
+    <div className="flex w-[70%] justify-between">
+    <h1>English</h1>
+    <h1>70%</h1>
+    </div>
+   
+   <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
+   <div className="w-[70%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
+   </div>
+   </div>
+   </div>
+   <div className="w-full">
+    <div className="flex w-[70%] justify-between">
+    <h1>French</h1>
+    <h1>60%</h1>
+    </div>
+   
+   <div className="w-full h-[3px] bg-[rgb(228,233,237)] rounded-full mt-2 ">
+   <div className="w-[60%] h-[3px] bg-[rgb(125,119,137)] rounded-full ">
    </div>
    </div>
    </div>
