@@ -7,7 +7,7 @@ import pic from "../public/static/Pic.avif"
 import Landing from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
-
+import Service from '../components/services';
 
 export default function Home() {
   const [Hovered, setHovered] = useState(false)
@@ -55,6 +55,8 @@ export default function Home() {
             {Route=="Home" && <Landing></Landing> }
             {Route=="About" && <About></About> }
             {Route=="Contact" && <Contact></Contact> }
+            {Route=="Service" && <Service></Service> }
+            
         </div>
        </div>
        <div  className='hidden md:block' >
