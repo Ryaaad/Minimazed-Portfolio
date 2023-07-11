@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { FaDiscord,FaLinkedinIn,FaGithub } from "react-icons/Fa";
-import { SiGmail } from "react-icons/si";
+import {FaDiscord,FaLinkedinIn,FaGithub} from "react-icons/fa";
+import {SiGmail} from "react-icons/si";
 
 const Footer = () => {
     return ( 
