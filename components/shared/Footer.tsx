@@ -10,14 +10,12 @@ const Footer = () => {
         <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"https://github.com/Ryaaad"} >
            <FaGithub ></FaGithub>
         </Link>
-        <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"ryadallali0@gmail.com"} >
+        <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"mailto:ryadallali0@gmail.com"} >
            <SiGmail ></SiGmail>
         </Link>
         <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"https://www.linkedin.com/in/ryad-allali-208874204"} >
            <FaLinkedinIn ></FaLinkedinIn>
         </Link>
-
-        
       <FaDiscord  className='z-10 cursor-pointer '  id='hovered' ></FaDiscord>
         </div>
       

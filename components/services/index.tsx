@@ -6,9 +6,9 @@ import BoxContainer from "./Box";
 const Service = () => {
     const Services=[
 
- {ServiceName:"Ui & Ux Design", desc:"Developing website involves creating your website, making it one of the most vital parts of your marketing", icone: <MdDesignServices  className="text-4xl md:text-6xl" ></MdDesignServices>},
- {ServiceName:"Web front-end Development", desc:" Developing website involves creating your website, making it one of the most vital parts of your marketing", icone: <MdWeb  className=" text-4xl md:text-6xl" ></MdWeb>},
- {ServiceName:"Back-end Development", desc:" Developing website involves creating your website, making it one of the most vital parts of your marketing", icone: <MdWeb  className=" text-4xl md:text-6xl" ></MdWeb>}
+ {ServiceName:"Ui & Ux Design", desc:"I'll bring your design concepts to life From mobile to web, I seamlessly blend aesthetics and functionality", icone: <MdDesignServices  className="text-4xl md:text-6xl" ></MdDesignServices>},
+ {ServiceName:"front-end Development", desc:" From design to implementation, I specialize in turning your ideas into captivating websites", icone: <MdWeb  className=" text-4xl md:text-6xl" ></MdWeb>},
+ {ServiceName:"Back-end Development", desc:" Everything from building databases to System design to building Rest Api", icone: <MdWeb  className=" text-4xl md:text-6xl" ></MdWeb>}
     ]
     return ( 
 <div  className="py-[95px] px-[10px] text-[#7d7789] xl:px-[3vw] 2xl:px-[6vw] " >

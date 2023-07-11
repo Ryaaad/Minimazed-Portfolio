@@ -15,7 +15,7 @@ const Contact = () => {
              </div>
              <div className="border border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-full border-[#00000012] md:text-base lg:text-[12px] xl:text-base md:w-[31%]">
              <HiMail  className="text-base" ></HiMail>
-            rayanalllali@gmail.com
+           ryadallali0@gmail.com
              </div>
              <div className="border-[#00000012] border-solid  flex flex-col justify-center items-center gap-2 text-[#7d7789] h-[94px] w-full border md:text-base lg:text-[12px] xl:text-base md:w-[31%]">
              <BsFillPhoneFill className="text-base" ></BsFillPhoneFill>
