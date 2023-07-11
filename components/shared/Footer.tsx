@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { FaDiscord,FaLinkedinIn,FaGithub } from "react-icons/Fa";
-import { SiGmail } from "react-icons/si";
+import {SiGmail} from "react-icons/si";
+import {RiLinkedinFill} from "react-icons/ri";
+import {BsGithub} from "react-icons/bs";
 
 const Footer = () => {
     return ( 
@@ -8,15 +9,15 @@ const Footer = () => {
         <h1  className="md:font-semibold sm:text-base text-[12px] " >Copyright  &copy; 2023</h1>
         <div  className='flex gap-2 md:text-lg'>
         <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"https://github.com/Ryaaad"} >
-           <FaGithub ></FaGithub>
+           <BsGithub ></BsGithub>
         </Link>
         <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"mailto:ryadallali0@gmail.com"} >
            <SiGmail ></SiGmail>
         </Link>
         <Link  className='z-10 cursor-pointer '  target="_blank"  id='hovered' href={"https://www.linkedin.com/in/ryad-allali-208874204"} >
-           <FaLinkedinIn ></FaLinkedinIn>
+           <RiLinkedinFill ></RiLinkedinFill>
         </Link>
-      <FaDiscord  className='z-10 cursor-pointer '  id='hovered' ></FaDiscord>
+      {/* <FaDiscord  className='z-10 cursor-pointer '  id='hovered' ></FaDiscord> */}
         </div>
       
       </div>
