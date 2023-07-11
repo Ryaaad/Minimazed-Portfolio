@@ -1,6 +1,6 @@
 import { Open_Sans} from '@next/font/google'
 import { Dispatch, SetStateAction, useState } from 'react'
-import { RxHamburgerMenu } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { FiX } from "react-icons/fi";
 import Footer from './Footer';
 import Image from "next/image";
@@ -51,7 +51,7 @@ const Navbar:React.FC<props> = ({setRoute}) => {
     <div className="flex justify-between p-3 justify-items-center px-5 relative top-0 right-0 items-center w-full md:hidden " >
      
      <h1 className= {` ${poppins.className} hover:cursor-pointer text-2xl leading-2 font-bold`}> Allali Ryad</h1>
-     { !MenuClicked && <RxHamburgerMenu className='text-3xl cursor-pointer ' onClick={()=>setMenuClicked(true)} ></RxHamburgerMenu>}
+     { !MenuClicked && <GiHamburgerMenu className='text-3xl cursor-pointer ' onClick={()=>setMenuClicked(true)} ></GiHamburgerMenu>}
      { MenuClicked &&  <FiX className='text-3xl cursor-pointer z-20' onClick={()=>setMenuClicked(false)} ></FiX>}
 
 
