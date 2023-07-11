@@ -21,7 +21,7 @@ const About = () => {
         <div  className="py-[95px] px-[20px] text-[#7d7789] " >
           <Title title="About Me" />
         <div className="flex flex-col gap-12 md:gap-0 md:flex-row md:justify-between md:items-start pr-2 mt-8  ">
-        <p   className=" w-full md:w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Rayan </span>a passionate and dedicated Fullstack web developer with 2 years experience. 
+        <p   className=" w-full md:w-[45%] font-[15px] "  >  Hello ! i'm  <span className="font-bold"> Allali Ryad </span>a passionate and dedicated Fullstack web developer with 2 years experience. 
         <br />
         <br />
         I am committed to delivering high-quality results and transforming your ideas into reality.
@@ -29,13 +29,13 @@ const About = () => {
   Let's collaborate and bring your vision to life !</p>
         <div  className=" w-full mt-3 h-[120px] md:mt-0 md:w-[45%] md:h-[170px] flex flex-col justify-between ">
           <div  className="flex gap-10 items-center " >
-          <span className="font-bold ">  Name: </span> Allali Rayan
+          <span className="font-bold ">  Name: </span> Allali Ryad
           </div>
           <div  className="flex gap-10 items-center" >
           <span className="font-bold "> Degree: </span> bachelor system informatique
           </div>
           <div  className="flex gap-10 items-center" >
-          <span className="font-bold "> Mail: </span>  rayanalllali@gmail.com
+          <span className="font-bold "> Mail: </span>  Ryadallali0@fmail.com
           </div>
           <div className="flex gap-10 items-center" >
           <span className="font-bold "> Phone: </span> 05 42 96 95 87
@@ -52,15 +52,19 @@ const About = () => {
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 1</span>
+    <span>FrontEnd web Applications</span>
   </div>
   <div className="flex items-center">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 2</span>
+    <span>Backend </span>
   </div>
   <div className="flex items-center">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 3</span>
+    <span>Ui & UX</span>
+  </div>
+  <div className="flex items-center">
+    <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
+    <span>building Rest Api</span>
   </div>
      </div>
         </div>
@@ -72,15 +76,15 @@ const About = () => {
      <div className="flex flex-col gap-4">
      <div className="flex items-center   ">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 1</span>
+    <span>Programming</span>
   </div>
   <div className="flex items-center">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 2</span>
+    <span>Gym</span>
   </div>
   <div className="flex items-center">
     <div className="w-2 h-2 bg-black rounded-full mr-2"></div>
-    <span>Item 3</span>
+    <span>Video Games</span>
   </div>
      </div>
 
